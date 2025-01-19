@@ -1,0 +1,74 @@
+/* Overall layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* The main content area takes up leftover space */
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* ADD THESE NEW RULES at the bottom: */
+
+.album-box {
+    display: flex;              
+    border: 1px solid #000;     
+    margin-bottom: 20px;        
+    padding: 10px;              
+    gap: 10px;                  
+}
+
+.album-box img {
+    max-width: 150px; 
+    height: auto;     
+    object-fit: cover;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* optional vertical centering */
+}
+
+.album-info h2 {
+    margin: 0 0 0.5rem;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+.back-button:hover {
+    text-decoration: underline;
+}
