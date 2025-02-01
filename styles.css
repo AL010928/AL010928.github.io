@@ -177,3 +177,14 @@ nav ul li a {
 .reveal-btn:hover {
     background-color: #ff3d3d;
 }
+
+.nsfw-content {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+[data-hidden="true"] {
+    display: none;
+}
