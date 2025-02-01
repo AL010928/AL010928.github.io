@@ -39,29 +39,11 @@
         <div class="recipe-box">
         <img src="images/Peach_Bruschetta.jpg" alt="Another Dish">
             <div class="dish-info">
-            <h2>Roasted Peach Bruschetta with Burrata and Prosciutto</h2>
-            <p>Easy appetizer to make, perfect for a summer gathering with friends.</p>
-            <p><strong>NSFW Description:</strong> <button class="reveal-btn">Reveal</button></p>
-        <!-- This section is visible in VScode but hidden in the browser -->
-            <div class="nsfw-content" data-hidden="true">
-            <p>Imagine this. Warm, golden slices of peaches, their flesh caramelized and glistening from the oven, rest delicately on a luxurious bed of velvety burrata—its creamy core spilling softly. The honeyed peach mingle with the burrata’s rich tang in a slow, indulgent dance of flavor. A crisp base of charred, rustic bread offers a satisfying crunch beneath it all, the texture balancing the softness of the toppings. The prosciutto drapes over the peaches like silk, bringing a saltiness that accentuates the sweetness without overpowering it..</p>
-            <p>A drizzle of honey, peppery olive oil, and a scattering of fresh basil leaves adds layers of intrigue—floral, herbal, and gently spiced. With every bite, you’re treated to contrast: the crackle of toasted bread against the melt of burrata, the syrupy warmth of peaches against the savory depth of prosciutto. Sweet, salty, creamy, and crisp—each note distinct, yet harmonized like a well-tuned orchestra, leaving you craving the next bite before you’ve finished the first. </p>
+                <h2><a href="recipes/peachbruschetta.html">Roasted Peach Bruschetta with Burrata and Prosciutto</a></h2>
+                <p>Easy appetizer to make, perfect for a summer gathering with friends.</p>
         </div>
     </div>
 </div>
 </body>
 </html>
 
-
-<script>
-    document.querySelector('.reveal-btn').addEventListener('click', function () {
-        const nsfwContent = document.querySelector('.nsfw-content');
-        if (nsfwContent.getAttribute('data-hidden') === 'true') {
-            nsfwContent.setAttribute('data-hidden', 'false'); // Show the content
-            this.textContent = 'Hide'; // Change button text
-        } else {
-            nsfwContent.setAttribute('data-hidden', 'true'); // Hide the content
-            this.textContent = 'Reveal'; // Change button text back
-        }
-    });
-</script>

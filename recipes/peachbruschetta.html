@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoruma Chop Recipe</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../journal.html">Journal of Thoughts</a></li>
+            <li><a href="../recipes.html">Recipes</a></li>
+            <li><a href="../sideprojects.html">Side Projects</a></li>
+            <li><a href="../serious.html">More Serious Stuff</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <a href="../recipes.html" class="back-button">Back to Recipes</a>
+        <h1>Roasted Peach Bruschetta with Burrata and Prosciutto</h1>
+
+        <!-- NSFW toggle for description -->
+        <p><strong>NSFW Description:</strong> <button class="reveal-btn">Reveal</button></p>
+        <div class="nsfw-content" data-hidden="true">
+            <p>Imagine this. Warm, golden slices of peaches, their flesh caramelized and glistening from the oven, rest delicately on a luxurious bed of velvety burrata—its creamy core spilling softly. The honeyed peach mingle with the burrata’s rich tang in a slow, indulgent dance of flavor. A crisp base of charred, rustic bread offers a satisfying crunch beneath it all, the texture balancing the softness of the toppings. The prosciutto drapes over the peaches like silk, bringing a saltiness that accentuates the sweetness without overpowering it....</p>
+            <p>A drizzle of honey, peppery olive oil, and a scattering of fresh basil leaves adds layers of intrigue—floral, herbal, and gently spiced. With every bite, you’re treated to contrast: the crackle of toasted bread against the melt of burrata, the syrupy warmth of peaches against the savory depth of prosciutto. Sweet, salty, creamy, and crisp—each note distinct, yet harmonized like a well-tuned orchestra, leaving you craving the next bite before you’ve finished the first.</p>
+        </div>
+
+        <p> No recipe yet... </p>
+
+        <!-- Recipe section layout with image on the left -->
+        <div class="recipe-top">
+            <img src="../images/Peach_Bruschetta.jpg" alt="Peach_Bruschetta" class="recipe-image">
+
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Instructions section -->
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                 
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.reveal-btn').addEventListener('click', function () {
+            const nsfwContent = document.querySelector('.nsfw-content');
+            if (nsfwContent.getAttribute('data-hidden') === 'true') {
+                nsfwContent.setAttribute('data-hidden', 'false');
+                this.textContent = 'Hide';
+            } else {
+                nsfwContent.setAttribute('data-hidden', 'true');
+                this.textContent = 'Reveal';
+            }
+        });
+    </script>
+</body>
+</html>
