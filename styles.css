@@ -154,3 +154,26 @@ nav ul li a {
         margin-bottom: 20px;
     }
 }
+
+
+
+
+
+
+[data-hidden="true"] {
+    display: none; /* Hide only in the browser */
+}
+
+.reveal-btn {
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reveal-btn:hover {
+    background-color: #ff3d3d;
+}
