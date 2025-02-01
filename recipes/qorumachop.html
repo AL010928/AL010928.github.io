@@ -21,7 +21,18 @@
     <div class="content">
         <a href="../recipes.html" class="back-button">Back to Recipes</a>
         <h1>Qoruma Chop with Beef 新疆干煸炒面</h1>
-        <p>Tip: Have a really hot wok! And stir fry everything on medium high-high. This might not be a healthy suggestion but....be generous with oil. </p>
+
+        <!-- NSFW toggle for description -->
+        <p><strong>NSFW Description:</strong> <button class="reveal-btn">Reveal</button></p>
+        <div class="nsfw-content" data-hidden="true">
+            <p>A feast of bold aromas, sizzling heat, and irresistible textures begins the moment the wok ignites. The fragrance of garlic crackles in hot oil, mingling with the earthy sweetness of caramelized onions and the bite of dried chili—each sizzle a promise of something decadent.</p>
+            <p>Beef strips, tender and marinated with soy, dark soy, and a kiss of cornstarch, sear to a deep, golden crust, locking in juices that drip like liquid umami.</p>
+            <p>Thick, chewy hand-pulled noodles soak up every drop of the rich, glossy sauce—a heady blend of soy sauce, oyster sauce, chili bean paste, and a hint of ketchup for that unexpected tang. Cumin dusts the dish in warmth, its smoky undertone weaving seamlessly into the medley of flavors, while a sprinkle of MSG elevates everything into savory perfection.</p>
+            <p>Vibrant red pepper strips and tender-crisp Chinese chives punctuate each bite, offering bursts of freshness amidst the deep, spicy richness. The noodles twirl around your fork, coated in a sauce that clings like silk, tasting of heat, salt, and the faintest whisper of sweetness.</p>
+            <p>With a final shower of sesame seeds, this dish arrives at your table—a symphony of spice, texture, and aroma. One bite, and the chew of the noodles, the tender beef, and the fiery sauce make it impossible not to reach for more. Served piping hot, it demands attention, and before you know it, that “one bowl of rice” suggestion becomes three.</p>
+        </div>
+
+        <p>Tip: Have a really hot wok! And stir fry everything on medium high-high. This might not be a healthy suggestion but... be generous with oil. </p>
 
         <!-- Recipe section layout with image on the left -->
         <div class="recipe-top">
@@ -32,17 +43,17 @@
                 <ul>
                     <li>Hand-pulled noodles (but you can replace this with any other chewy noodles)</li>
                     <li>Onions (sliced)</li>
-                    <li>minced garlic</li>
+                    <li>Minced garlic</li>
                     <li>Red pepper, sliced</li>
                     <li>500g beef strips</li>
                     <li>Chinese chives</li>
                     <li>Handful of dried chili</li>
                     <li>Soy sauce</li>
-                    <li>Dark Soy sauce</li>
+                    <li>Dark soy sauce</li>
                     <li>Cumin powder</li>
                     <li>Ketchup</li>
-                    <li>Oyster Sauce</li>
-                    <li>Chilli Bean Sauce 豆瓣醬 (can be found at chinese grocery stores)</li>
+                    <li>Oyster sauce</li>
+                    <li>Chili bean sauce 豆瓣醬 (can be found at Chinese grocery stores)</li>
                     <li>MSG (oh yes 🤌🏼)</li>
                 </ul>
             </div>
@@ -52,16 +63,29 @@
         <div class="instructions">
             <h2>Instructions</h2>
             <ol>
-                <li>Soak the dried chillis in water for 10-15 minutes, and cut the onion and pepper into strips.</li>
-                <li>Marinade the beef with black pepper, white pepper, one spoon of soy sauce, one spoon of dark soy soysauce, and cornstarch. Mix well, then rizzle with olive oil and leave in fridge to marinade for 15 minutes. </li>
-                <li>Boil the noodles for 5 minutes (or however long it takes for it to cook), then wash in cold water to stop the cooking. </li>
-                <li>Heat up some oil in a HOT (!!) wok, stir-fry the beef until browned, then set aside. </li>
-                <li>Add the sliced garlic and the white parts of chinese chives, and cook until fragrant. Add a spoon of chilli bean sauce, dried chillies, onions, and pepper. </li>
-                <li>Add one spoon of the following: ketchup, soysauce, dark soysauce, oyster sauce, and a pinch of white pepper and MSG. Add cumin to taste.</li>
-                <li>Add the beef, the noodles, and chinese chives. Cook unutil everything is coated in this amazing sauce...</li>
-                <li>Top with sesame seeds, and serve piping hot with a nice bowl of rice (or 3, as this dish always makes me overeat)</li>
+                <li>Soak the dried chilies in water for 10-15 minutes, and cut the onion and pepper into strips.</li>
+                <li>Marinate the beef with black pepper, white pepper, one spoon of soy sauce, one spoon of dark soy sauce, and cornstarch. Mix well, then drizzle with olive oil and leave in fridge to marinate for 15 minutes.</li>
+                <li>Boil the noodles for 5 minutes (or however long it takes for them to cook), then wash in cold water to stop the cooking.</li>
+                <li>Heat up some oil in a HOT (!!) wok, stir-fry the beef until browned, then set aside.</li>
+                <li>Add the sliced garlic and the white parts of Chinese chives, and cook until fragrant. Add a spoon of chili bean sauce, dried chilies, onions, and pepper.</li>
+                <li>Add one spoon of the following: ketchup, soy sauce, dark soy sauce, oyster sauce, and a pinch of white pepper and MSG. Add cumin to taste.</li>
+                <li>Add the beef, the noodles, and Chinese chives. Cook until everything is coated in this amazing sauce...</li>
+                <li>Top with sesame seeds, and serve piping hot with a nice bowl of rice (or 3, as this dish always makes me overeat).</li>
             </ol>
         </div>
     </div>
+
+    <script>
+        document.querySelector('.reveal-btn').addEventListener('click', function () {
+            const nsfwContent = document.querySelector('.nsfw-content');
+            if (nsfwContent.getAttribute('data-hidden') === 'true') {
+                nsfwContent.setAttribute('data-hidden', 'false');
+                this.textContent = 'Hide';
+            } else {
+                nsfwContent.setAttribute('data-hidden', 'true');
+                this.textContent = 'Reveal';
+            }
+        });
+    </script>
 </body>
 </html>
