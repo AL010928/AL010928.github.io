@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoruma Chop Recipe</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../journal.html">Journal of Thoughts</a></li>
+            <li><a href="../recipes.html">Recipes</a></li>
+            <li><a href="../sideprojects.html">Side Projects</a></li>
+            <li><a href="../serious.html">More Serious Stuff</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <a href="../recipes.html" class="back-button">Back to Recipes</a>
+        <h1>Baked Cod with Chorizo and Spiced Grains</h1>
+        <p>Relatively easy, could come together in 30 minutes. </p>
+
+        <!-- Recipe section layout with image on the left -->
+        <div class="recipe-top">
+            <img src="../images/Baked_Cod.jpg" alt="Baked Cod" class="recipe-image">
+
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 cod fillets</li>
+                    <li>2 cloves of Garlic</li>
+                    <li>1 shallot</li>
+                    <li>Some peas</li>
+                    <li>70g chorizo</li>
+                    <li>Chives</li>
+                    <li>Yogurt</li>
+                    <li>2 tbsp smoked paprika</li>
+                    <li>Cooked Grains (I used a premade one, but you can make your own and add your favorite spices)</li>
+                    <li>lemon</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Instructions section -->
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat oven to 220 °C.</li>
+                <li>Pat the cod dry, season with half the garlic, smoked paprika, olive oil, salt, then set aside for 10-15 minutes.</li>
+                <li>Mince the garlic and shallots. Cut the chives, and dice chorizo into bite sized cubes. Defrost frozen peas by submerging them in boiling water.</li>
+                <li>Pop the cod into the oven and bake for 15 minutes.</li>
+                <li>Meanwhile, heat up a small frying pan on medium heat. Cook the chorizo until rendered (5 minutes), then add in shallots and half of the remaining garlic (2 minutes). Add peas and half of the chives. </li>
+                <li>Mix the yougurt with lemon zest, the remaining garlic, and season with salt. </li>
+                <li>Heat the grains (I used packaged ones for ease) </li>
+                <li>Assemble: Layer the grains on top of a bed of yogurt. Add a piece of cod on, then top with the chorizo pea dressing. </li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.reveal-btn').addEventListener('click', function () {
+            const nsfwContent = document.querySelector('.nsfw-content');
+            if (nsfwContent.getAttribute('data-hidden') === 'true') {
+                nsfwContent.setAttribute('data-hidden', 'false');
+                this.textContent = 'Hide';
+            } else {
+                nsfwContent.setAttribute('data-hidden', 'true');
+                this.textContent = 'Reveal';
+            }
+        });
+    </script>
+</body>
+</html>
