@@ -188,3 +188,55 @@ nav ul li a {
 [data-hidden="true"] {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.game-matrix {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.game-matrix table {
+    width: 60%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.game-matrix caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.game-matrix th, .game-matrix td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
+
+.game-matrix th {
+    background-color: #f4f4f4;
+}
