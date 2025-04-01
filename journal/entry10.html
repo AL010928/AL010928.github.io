@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges with systematic reviews</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../journal.html">Journal of Thoughts</a></li>
+            <li><a href="../recipes.html">Recipes</a></li>
+            <li><a href="../sideprojects.html">Side Projects</a></li>
+            <li><a href="../serious.html">More Serious Stuff</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <a href="../journal.html" class="back-button">Back to Journal of Thoughts</a>
+        <h2>Problems with systematic reviews</h2>
+        <p>Some thoughts relating to limitations of systematic reviews. </p>
+        <h1>1. Tension between systematic reviews and clinical guidelines</h1>
+        <p>Clinical guidelines are one of the most important developments in the past 30-40 years, they are statements developed 
+            from evidence to guide clinical practice guidelines. It 1. enable measurement of compliance with accepted standards of 
+            care, 2. standardize care and reduce harmful or costly unjustified variation in patient care, and 3. facilitate 
+            consistency and predictability. Systematic reviews are one of the best method of summarizing evidence of effectiveness 
+            within a clinical practice guideline. But, there seems to be a tension with the way that systematic reviews are 
+            developed and the goals of clinical guidelines. 
+
+            The way that we come up with the eligibility criteria, the way that we set up the PICOS etc are attempts at eliminating 
+            heterogeneity. All those attempts are correct in the sense that they are all attempts to make results robust and valid. 
+            But this means that systematic review results may not be helpful for the actual clinical questions that we are trying to
+             answer. 
+            
+            Ex. 80 year old woman who has five chronic conditions: osteoporosis, osteoarthritis, diabetes, hypertension, and chronic
+             obstructive pulmonary disease. If she goes to different doctor, the doctors will be following different guidelines to 
+             treat each of these conditions. Since the clinical guidelines are developed from systematic reviews, it will recommend 
+             treatment for patients with only those conditions (again, heterogeneity is bad in RCT and systematic reviews). If this 
+             patient in particular follows all the clinical guidelines, she will be responsible for 7 self-management tasks; 
+             clinician for 18 tasks; 12 separate medications in 19 doses every day—you do not need to be a healthcare professional 
+             to know that this would be bad for the patient and the healthcare system alike (Boyd C et al. 2005)!
+            
+            On a related note, we would like to think that our clinical guidelines are evidence based and robust. Data from ACC/AHA 
+            clinical practice guidelines—one of the top physician associations—suggest that it’s still far from the case. 
+            Recommendations from ACC/AHA are graded based on level of evidence: Level A: recommendation based on evidence from 
+            multiple randomized trials or meta-analyses. Level B: recommendation based on evidence from a single randomized trial or
+             nonrandomized studies. Level C: recommendation based on expert opinion, case studies, or standards of care. Out of 16 
+             clinical practice guidelines with 2,711 recommendations, 314 (11.6%) recommendations are classified as Level A, 1,151 
+             (42.6%) recommendations are classified as Level B, 1,246 (45.9%) recommendations are classified as Level C. Pretty 
+             striking numbers I would say! We are still relying more significantly on expert opinions instead of robust evidence 
+             (Tricoci et al. 2009). 
+            
+            Additionally, recommendations also never just emerge from the evidence itself—data never speaks for itself. All these problem still persists in spite of high quality systematic reviews and best attempts at standardizing treatment. 
+            </p>
+        <h1>2. Problems when reporting systematic results </h1>
+        <p>Reporting typically uses relative measure (odds ratios, risk ratios). Not only does this affect heterogeneity results 
+            (risk difference may arbitrarily introduce heterogeneity into results, hence it is preferred then to use odds ratio), 
+            but there are also implications of using ratios which can be demonstrated through an example. 
+
+            Consider two individuals, one has high risk of cardiovascular events (28%), the other has low (9%). Let’s say that we 
+            have a meta-analysis of the treatment option of statin, and the results is that statin therapy provides 27% relative 
+            risk reduction (RR=0.73). 
+            
+            It mask an important information, which is how people at different baseline respond to treatment. In this case, people 
+            with different risk levels respond very differently to treatment in absolute terms, this becomes more complicated with 
+            different co-morbidities. Hence, it seems advisable to use risk ratios or odd ratios in analysis but convert it to risk 
+            difference at the end of it (inverse of the risk ratio). The resulting number tells you how many patients you need to 
+            treat in order for one of them to benefit from treatment—a simple conversion ends up presenting the same results very 
+            differently, and you end up providing a more nuanced of picture of: “Yes, this treatment is effective overall, but the 
+            magnitude of that treatment effect difference can vary across different subgroups”. </p>
+        <h1>3.Trends in meta-analysis results </h1>
+        <p>In the 1980 and 1990s, people became really excited about meta-analysis. The trend has changed in the last few years. 
+            See <li><a href="https://pubmed.ncbi.nlm.nih.gov/27620683/">this</a></li> article by John Ioannidis. He was one of the 
+            key methodologists for the development of systematic reviews, and has written many of the seminal papers in this field. 
+            What he documents int his article is that the number of published systematic reviews far outpace publications of RCTs.
+            And what we are seeing is that in more recent years, the ratio of RCT to systematic review is close to 1. In other words,
+            for each RCT you have, you have a systematic review.  The reasons are multifold, but mainly driven by two trends: it is
+            much easier and quicker to do a systematic review than to do RCT, especially if you don’t do them well. In a space 
+            mainly driven by publication, the fact that you can get a publication in a relatively quick and easy way drives 
+            interests to do systematic reviews. A related factor to this is that we are seeing redundancy: the same RCTs are being 
+            meta-analyzed again and again not to answer different questions, but to answer the same question over and over again. 
+            It is also driven by updates of the systematic review—which is actually a good thing—but then it does crowds the 
+            literature which makes it more complicated to know which meta-analysis to trust. If we continue having such large 
+            numbers of systematic reviews being published, people’s perception of their quality will falter. Which is a shame 
+            because these studies can be incredibly rigorous. 
+
+            One new development is living systematic reviews, which is simply that you have one systematic review that gets updated 
+            every once in a while that incorporates new evidence. Sounds intuitive! But when you think about how medical publishing 
+            works, it is a complete paradigm shift to have version controls of papers. It also means that the systematic review 
+            will belong to a single team only, which can present challenges in the academic environment. 
+            Another problem is funding for a project that promises to never end (so far, only a few funders are interested, 
+            Wellcome trust is one of them). 
+            </p>
+    </div>
+</body>
+</html>
