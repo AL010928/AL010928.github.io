@@ -1,7 +1,5 @@
-<!-- This HTML file is a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
-<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
-<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
-<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
+<!-- One example of index page -->
+<!-- It works with the three css files in this folder: graphstyle1.css, example2.css and example3.css. -->
 
 <!DOCTYPE html>
 <html>
@@ -34,18 +32,18 @@
     </h1>
     <p style="margin-top: 0px; color: darkblue">
         <!-- Setting the margin to 0px so the header and authour name are close together -->
-        Ava Liang | <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a> | <a
-            href="https://www.github.com/YOUR_GITHUB">GitHub</a>
+        Ava Liang | <a href="https://www.linkedin.com">LinkedIn</a> | <a
+            href="https://github.com/AL010928/AL010928.github.io">GitHub</a>
     </p>
     <h3 class="small">
         <!-- Added a class to the header called "small" which I can use to style it in the CSS -->
-        I am learning how to make data visualization. More specifically (since we are all capable to creating charts in excel), I am 
+        I am learning data visualization. More specifically (since we are all capable to creating charts in excel), I am 
         learning how to build single secure channels that links a data visualization output right back to the raw data. This involves learning:
-            1. The philosohy behind a more modern appraoch to data visualization 
+            1. The philosophy behind a more modern approach to data visualization (visualization as a form of data, transparency, reproducibility, Tufte, Albers etc)
             2. How to use vega-lite to create charts (I might also explore R later)
             3. How to embed them and style them on a website (and therefore learning html, css, and javascript)
     </h3>
-    <h3 class="small"></h3>
+    <h3 class="small">
         What this means is that all the visualizations that I make are open source! The raw data and the JSON code to create the charts are all 
         publically available on my Github.
 
@@ -67,7 +65,7 @@
         <div class="chart-description">
             <h2>Section 2: another one</h2>
             <p> 
-                This is ONS data on UK output per hour from 1997 to 2024. Raw data and Json graph spec are available on my GitHub.
+                This is ONS data on UK output per hour from 1997 to 2024.
             </p>
         </div>
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -103,7 +101,6 @@
 
         let figure_2_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/UK_output_per_hour.json";
         vegaEmbed('#Location2', figure_2_spec)
-
 
         // Defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g.
