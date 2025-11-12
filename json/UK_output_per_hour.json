@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "UK output per hour",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/data/UK_output_per_hour.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "Value", "type": "quantitative"}
+  },
+  "config": {}
+}
