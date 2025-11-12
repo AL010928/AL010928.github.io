@@ -7,11 +7,11 @@
 <html>
 
 <head>
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
+    <!-- The head tag links to resources the page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
 
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="Example3.css">
+    <!-- There are different graphstyles. I've used graphstyle1, but there are 2 and 3-->
+    <link rel="stylesheet" type="text/css" href="graphstyle1.css">
     <title>My Portfolio</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
     <!-- This is a link to the vega-lite which we're using to make graphs -->
@@ -27,21 +27,26 @@
 </head>
 
 <body>
-    <!-- The body tag contains the elements that visitors to our page will see. -->
+
     <h1 class="big" style="margin-bottom: 0px;">
-        <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
+        <!-- Added a class to the header called "big" which I can use to style it in the CSS -->
         Ava Liang
     </h1>
     <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        <!-- Setting the margin to 0px so the header and authour name are close together -->
         Ava Liang | <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a> | <a
             href="https://www.github.com/YOUR_GITHUB">GitHub</a>
     </p>
     <h3 class="small">
-        <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        I am learning how to make live charts (that links to the data source) and how to embed them on the website. Both raw data and the JSON 
-        specs or publically available on my Github. This page is a portfolio of my work so far.
+        <!-- Added a class to the header called "small" which I can use to style it in the CSS -->
+        I am learning how to make data visualization. More specifically (since we are all capable to creating charts in excel), I am 
+        learning how to build single secure channels that links a data visualization output right back to the raw data, and how to display 
+        them on a website (therefore also learning html, css, and javascript).
+
+        What this means is that all the visualizations that I make are open source! The raw data and the JSON code to create the charts are all 
+        publically available on my Github.
+
+        The following are some of my works so far. Thanks for checking it out!
     </h3>
 
     <!-- I'm organising the page into sections, with each section containing a chart, title and a description -->
@@ -52,7 +57,7 @@
                 This is a first chart, simple plot of GDP against life expectancy.
             </p>
         </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location1"></figure> <!-- give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
     <section>
