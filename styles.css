@@ -245,25 +245,14 @@ footer {
 .fab-light {
     color: var(--wm-colours-light)
 }
-/* General - Construction */
-
-.construction{
-    height: 85vh;
-    width: 100vw;
-    position: relative;
-    font-size: 2rem;
-    align-items: center;
-    display: flex;
-}
-
-.construction-content {
-    padding-top: 5%;
-    width: 50%;
-
-}
 
 
 
+
+    wm-flex-row {
+        display: flex;
+        flex-direction: column;
+      }
 
 
 
