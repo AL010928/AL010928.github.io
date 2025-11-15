@@ -191,91 +191,6 @@ nav ul li a {
 
 
 
-
-/* General - Media Queries*/
-
-@media screen and (max-width:1024px){
-    .wm-section {
-        padding: 0 12vw 70px 12vw;
-      }
-    
-    .gallery-column {
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .nav {
-        z-index: 4
-        
-    }
-}
-
-
-
-
-
-    /* General - Footer */
-
-footer {
-    background-color: var(--wm-colours-dark);
-}
-
-.footer-content {
-    padding: 1em 0.5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} 
-
-.footer-content h2{
-    color: var(--wm-colours-light);
-}
-
-.footer-content p{
-    color: var(--wm-colours-light);
-    
-}
-
-
-#icons-light {
-    font-size: large;
-    z-index: 4;
-}
-
-.fab-light {
-    color: var(--wm-colours-light)
-}
-
-
-
-
-    wm-flex-row {
-        display: flex;
-        flex-direction: column;
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .game-matrix {
     text-align: center;
     margin: 20px 0;
@@ -302,4 +217,18 @@ footer {
 
 .game-matrix th {
     background-color: #f4f4f4;
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color--black);
+  min-height: 100px;
+  background-color: var(--color--black);
+  color: var(--color--white);
 }
