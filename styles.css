@@ -232,3 +232,11 @@ nav ul li a {
   background-color: var(--color--black);
   color: var(--color--white);
 }
+
+
+.site {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+}
