@@ -1,5 +1,6 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.23.0.json",
+
   "config": {
     "font": "Circular Std",
     "background": "#f7f7f7",
@@ -107,7 +108,8 @@
   "transform": [
     { "filter": "datum.value != null" },
     { "calculate": "datum.country.value", "as": "region" },
-    { "calculate": "toDate(datum.date + '-01-01')", "as": "year" }
+    { "calculate": "toDate(datum.date + '-01-01')", "as": "year" },
+    { "filter": "toNumber(datum.date) >= 1990 && toNumber(datum.date) <= 2024" }
   ],
 
   "layer": [
