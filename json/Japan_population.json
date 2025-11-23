@@ -21,7 +21,7 @@
     "strokeOpacity": 0
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/data/Japan_population.json",
+    "url": "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/data/Japan_population_data.json",
     "format": {
       "type": "json"
     }
