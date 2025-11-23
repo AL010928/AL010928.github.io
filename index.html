@@ -52,9 +52,9 @@
     <!-- I'm organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h2>1. GDP against life expectancy</h2>
             <p> 
-                This is a first chart, simple plot of GDP against life expectancy.
+                Both data and chart files are from the economics observatory. I simply link to it here.
             </p>
         </div>
         <figure id="Location1"></figure> <!-- give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -62,9 +62,10 @@
 
     <section>
         <div class="chart-description">
-            <h2>Section 2: another one</h2>
+            <h2>2. UK Output per hour</h2>
             <p> 
-                This is ONS data on UK output per hour from 1997 to 2024.
+                This line chart showing UK output per hour from 1997 to 2024. <br>
+                This is my first pass at using vega-lite to create a JSON chart file. The data used for the chart comes from ONS. Both the csv (data file) and json (chart spec) can be found in my github repo.
             </p>
         </div>
         <figure id="Location2"></figure> 
@@ -72,19 +73,36 @@
 
     <section>
         <div class="chart-description">
-            <h2>Section 3: Population of Japan</h2>
+            <h2>3. Population of Japan</h2>
             <p> 
-                Data from the economic observatory on the population of Japan from 1950 to 2020.
+                Data and JSON spec are both from the economic observatory website. 
             </p>
         </div>
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location3"></figure> 
     </section>
 
+    <section>
+        <div class="chart-description">
+            <h2>4. Fertility Rate</h2>
+            <p> 
+                First attempt at a live chart. I used the World Bank API to pull live data. <br>
+            </p>
+        </div>
+        <figure id="Location4"></figure> 
+    </section>
 
+    <section>
+        <div class="chart-description">
+            <h2>5. x</h2>
+            <p> 
+                First attempt at a live chart. I used the World Bank API to pull live data. <br>
+            </p>
+        </div>
+        <figure id="Location5"></figure> 
+    </section>
 
     <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
     <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
 
 
 
@@ -115,6 +133,9 @@
 
         let figure_3_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/Japan_population.json";
         vegaEmbed('#Location3', figure_3_spec)
+
+        let figure_4_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/Fertility_rate.json";
+        vegaEmbed('#Location4', figure_4_spec)
 
         // Defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
         // e.g.
