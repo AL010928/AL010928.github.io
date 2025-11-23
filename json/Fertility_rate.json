@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.23.0.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "config": {
     "font": "Circular Std",
