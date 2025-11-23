@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Population",
     "anchor": "start",
@@ -10,27 +10,20 @@
     "subtitleColor": "#000000"
   },
   "height": 250,
-  "width": "container",
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
+  "width": 500, 
   "background": "#ffffff",
-  "view": {
-    "fill": "#ffffff",
-    "strokeOpacity": 0
-  },
+
   "data": {
     "url": "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/data/Japan_population_data.json",
-    "format": {
-      "type": "json"
-    }
+    "format": {"type": "json"}
   },
+
   "mark": {
     "type": "line",
     "color": "#f4134d",
     "strokeWidth": 2
   },
+
   "encoding": {
     "x": {
       "field": "date",
