@@ -1,0 +1,118 @@
+<!-- listeningparty.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Source Data Visualization</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <h1 class="big" style="margin-bottom: 0px;">
+        <!-- Added a class to the header called "big" which I can use to style it in the CSS -->
+        Ava Liang
+    </h1>
+    <p>
+        <!-- Added a class to the header called "small" which I can use to style it in the CSS -->
+        I am learning data visualization. More specifically (since we are all capable to creating charts in excel), I am 
+        learning how to build single secure channels that links a data visualization output right back to the raw data. This involves learning: <br>
+            1. The philosophy behind a more modern approach to data visualization (visualization as a form of data, transparency, reproducibility, Tufte, Albers etc) <br>
+            2. How to use vega-lite to create charts (I might also explore R later)<br>
+            3. How to embed them and style them on a website (and therefore learning html, css, and javascript)<br>
+    
+        What this means is that all the visualizations that I make are open source! The raw data and the JSON code to create the charts are all 
+        publically available on my Github.<br><br>
+
+        The following are some of my works so far. Thanks for checking it out!
+ 
+    </p>
+    <!-- I'm organising the page into sections, with each section containing a chart, title and a description -->
+    <section>
+        <div class="chart-description">
+            <h2>1. GDP against life expectancy</h2>
+            <p> 
+                Both data and chart files are from the economics observatory. I simply link to it here.
+            </p>
+        </div>
+        <figure id="Location1"></figure> <!-- give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>2. UK Output per hour</h2>
+            <p> 
+                This line chart showing UK output per hour from 1997 to 2024. <br>
+                This is my first pass at using vega-lite to create a JSON chart file. The data used for the chart comes from ONS. Both the csv (data file) and json (chart spec) can be found in my github repo.
+            </p>
+        </div>
+        <figure id="Location2"></figure> 
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>3. Population of Japan</h2>
+            <p> 
+                Data and JSON spec are both from the economic observatory website. 
+            </p>
+        </div>
+        <figure id="Location3"></figure> 
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>4. Fertility Rate</h2>
+            <p> 
+                First attempt at a live chart. I used the World Bank API to pull live data. <br>
+            </p>
+        </div>
+        <figure id="Location4"></figure> 
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>5. x</h2>
+            <p> 
+                First attempt at a live chart. I used the World Bank API to pull live data. <br>
+            </p>
+        </div>
+        <figure id="Location5"></figure> 
+    </section>
+
+    <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
+    <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script>
+
+        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+        // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+
+        vegaEmbed('#Location1', figure_1_spec) // Using the vegaEmbed function to put a graph in the element with id figure_1
+
+        let figure_2_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/UK_output_per_hour.json";
+        vegaEmbed('#Location2', figure_2_spec)
+
+        let figure_3_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/Japan_population.json";
+        vegaEmbed('#Location3', figure_3_spec)
+
+        let figure_4_spec = "https://raw.githubusercontent.com/AL010928/AL010928.github.io/refs/heads/main/json/Fertility_rate.json";
+        vegaEmbed('#Location4', figure_4_spec)
+
+        // Defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
+        // e.g.
+        // let figure_3_spec = ...
+        // vegaEmbed('#Location3', figure_3_spec)
+    </script>
+
+</body>
+</html>
