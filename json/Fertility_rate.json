@@ -194,6 +194,6 @@
   ],
 
   "height": 350,
-  "width": "container",
-  "autosize": { "type": "fit", "contains": "padding", "resize": false }
+  "width": 500,
+  "autosize": { "type": "pad", "contains": "padding" }
 }
