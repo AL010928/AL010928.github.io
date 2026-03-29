@@ -10,6 +10,7 @@
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
             <li><a href="../journal.html">Journal of Thoughts</a></li>
             <li><a href="../recipes.html">Recipes</a></li>
             <li><a href="../sideprojects.html">Side Projects</a></li>
@@ -58,15 +59,13 @@
     </div>
 
     <script>
-        document.querySelector('.reveal-btn').addEventListener('click', function () {
-            const nsfwContent = document.querySelector('.nsfw-content');
-            if (nsfwContent.getAttribute('data-hidden') === 'true') {
-                nsfwContent.setAttribute('data-hidden', 'false');
-                this.textContent = 'Hide';
-            } else {
-                nsfwContent.setAttribute('data-hidden', 'true');
-                this.textContent = 'Reveal';
-            }
+        const btn = document.querySelector('.reveal-btn');
+        const nsfwContent = document.querySelector('.nsfw-content');
+
+        btn.addEventListener('click', () => {
+            const hidden = nsfwContent.dataset.hidden === 'true';
+            nsfwContent.dataset.hidden = !hidden;
+            btn.textContent = hidden ? 'Hide' : 'Reveal';
         });
     </script>
 </body>

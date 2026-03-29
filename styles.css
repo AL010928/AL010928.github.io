@@ -34,6 +34,17 @@ nav ul li a {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Charts stack vertically */
+figure {
+    display: block;
+    margin: 0 0 2rem 0;
+}
+
+.vega-embed {
+    display: block;
 }
 
 /* ---- Listening Party Boxes ---- */
